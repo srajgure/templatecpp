@@ -1,35 +1,54 @@
-#include <bits/stdc++.h>
+#include <stdio.h>     
+#include <stdlib.h>    
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <fstream>
+#include <queue>
+#include <deque>
+#include <iomanip>
+#include <cmath>
+#include <set>
+#include <stack>
+#include <map>
+#include <unordered_map>
+ 
+#define FOR(i,n) for(int i=0;i<n;i++)
+#define FORE(i,a,b) for(int i=a;i<=b;i++)
+#define ll long long 
+#define ld long double
+#define vi vector<int>
+#define pb push_back
+#define ff first
+#define ss second
+#define ii pair<int,int>
+#define iii pair<int,ii>
+#define iiii pair<iii,int>
+#define pll pair<ll,ll>
+#define plll pair<ll,pll>
+#define vv vector
+#define endl '\n'
+ 
 using namespace std;
 
-typedef long long ll;
-typedef vector<int> vi;
-typedef vector<vi> vvi;
-typedef vector<ll> vl;
-typedef vector<vl> vvl;
-typedef pair<int, int> pii;
-typedef pair<ll, ll> pll;
-typedef pair<string, string> pss;
-
-void solve(ll test_case)
-{
-    // Do your thing here :)
-    cout << "Hello"<<test_case << "\n";
+ 
+void solve(){
+    cout<<"hello world"<<endl;
 }
+ 
+int main(){
 
-int main()
-{
 #ifndef ONLINE_JUDGE
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
 #endif
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
 
-    ll t, t1 = 0;
-    cin >> t;
-    while (t1 < t)
-    {
-        solve(t1 + 1);
-        t1++;
-    }
-}
+	ios_base::sync_with_stdio(0);
+	cin.tie(0);
+	cout.tie(0);
+
+	int t;
+	cin >> t;
+	while(t--)solve();
+	return 0;
+} 
