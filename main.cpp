@@ -13,8 +13,8 @@
 #include <map>
 #include <unordered_map>
  
-#define FOR(i,n) for(int i=0;i<n;i++)
-#define FORE(i,a,b) for(int i=a;i<=b;i++)
+#define FOR(i,n) for(long long i=0;i<n;i++)
+#define FORE(i,a,b) for(long long i=a;i<=b;i++)
 #define ll long long 
 #define ld long double
 #define vi vector<int>
@@ -33,7 +33,6 @@ using namespace std;
 
  
 void solve(){
-    cout<<"hello world"<<endl;
 }
  
 int main(){
@@ -47,7 +46,7 @@ int main(){
 	cin.tie(0);
 	cout.tie(0);
 
-	int t;
+	ll t;
 	cin >> t;
 	while(t--)solve();
 	return 0;
