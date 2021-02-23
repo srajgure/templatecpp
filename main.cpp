@@ -1,3 +1,9 @@
+/*
+Stock Span Problem - https://www.geeksforgeeks.org/the-stock-span-problem/
+
+Data structure used- Stack
+*/
+
 #include <stdio.h>     
 #include <stdlib.h>    
 #include <iostream>
@@ -33,6 +39,27 @@ using namespace std;
 
  
 void solve(){
+	ll N,i;
+	cin>>N;
+	vector<ll> arr(N);
+	FOR(i,N)cin>>arr[i];
+	stack<ll> st;
+	st.push(0);
+	cout<<1<<" ";
+	FORE(i,1,N-1)
+	{
+		
+		while(!st.empty() and arr[st.top()]<=arr[i])
+			st.pop();
+
+		if(st.empty())
+			cout<<i+1<<" ";
+		else
+			cout<<i-st.top()<<" ";
+
+		st.push(i);
+	}
+	cout<<endl;
 }
  
 int main(){
