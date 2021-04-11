@@ -15,6 +15,7 @@
  
 #define FOR(i,n) for(long long i=0;i<n;i++)
 #define FORE(i,a,b) for(long long i=a;i<=b;i++)
+#define FORD(i, a, b) for (int i = a; i >= b; i--)
 #define ll long long 
 #define ld long double
 #define vi vector<int>
